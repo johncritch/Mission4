@@ -10,9 +10,6 @@ namespace MovieSite.Models
         public int FilmID { get; set; }
 
         [Required]
-        public string Category { get; set; }
-
-        [Required]
         public string Title { get; set; }
 
         [Required]
@@ -30,6 +27,11 @@ namespace MovieSite.Models
 
         [MaxLength(25)]
         public string Notes { get; set; }
+
+        //Build Foreign key Relationship
+        [Required]
+        public int CategoryID { get; set; }
+        public Category Category { get; set; }
 
     }
 }

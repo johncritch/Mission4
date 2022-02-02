@@ -57,7 +57,7 @@ namespace MovieSite
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{filmid?}");
             });
         }
     }
